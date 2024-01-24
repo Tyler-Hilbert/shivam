@@ -1,0 +1,172 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="XA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 id="name"><span id="red-letter">P</span>ortfolio.</h1>
+            <ul id="sidemenu">
+                <li><a href="#header"><span class="red-letter">H</span>ome</a></li>
+                <li><a href="#about"><span class="red-letter">A</span>bout</a></li> 
+                <li><a href="#experience"><span class="red-letter">E</span>xperience</a></li>
+                <li><a href="#projects"><span class="red-letter">P</span>rojects</a></li>
+                <li><a href="#contact"><span class="red-letter">C</span>ontact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()" aria-hidden="true"></i>
+            </ul>
+
+            <i class="fa-solid fa-bars" onclick="openmenu()" aria-hidden="true"></i>
+        </nav>
+        <div class="header-text">
+            <p>Student at <span class="red-letter">U</span>niversity of <span class="red-letter">C</span>incinnati</p>
+            <h1>Hello,<br> I'm Shivam Kharangate!</h1>
+        </div>
+    </div>
+</div>
+
+<!----------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Shivam Kharangate, a sophomore currently enrolled at the University of Cincinnati, where I'm pursuing my Bachelor of Science degree in Computer Science. 
+                    I grew up in Muscat, Oman, and my earlier education took place at the esteemed Indian School Muscat.
+                     My passion lies in making a positive impact on the world through the exciting domains of Machine Learning and Software Development.
+                      I'm determined to leverage my knowledge and skills to tackle real-world problems and contribute to transformative projects in the field of Computer Science. 
+                      As I progress through my academic journey, my goal is to be a driving force for change, harnessing cutting-edge technologies to bring innovation and solutions to global challenges.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br> Python, C++, C#, HTML, CSS, JavaScript, R, SQL, VBA, LabVIEW, MATLAB, Machine Learning Algorithms, Artificial Neural Networks</li>
+                        <li><span>Engineering Skills</span><br> Soldering, PCB Assembly, AutoCAD, Arduino, Data Analysis</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - Present</span><br>Bachelors of Science in Computer Science at University of Cincinnati, Ohio</li>
+                        <li><span>2020 - 2022</span><br>Enginneering Graphics at Indian School Muscat, Oman</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>    
+    </div>
+</div>
+
+<!--------experience-------->
+<div id="experience">
+    <div class="container">
+        <h1 class="sub-title">My Experience</h1>
+        <div class="experience-list">
+            <div>
+                <h2>Research Assisant <br>(May 2023 - Present)</h2>
+                <p>I am currently working in the MEMS &amp; Autonomous Integrated Microsystems Laboratory at the University of Cincinnati,
+                    as an Undergraduate Research Assistant, where I am actively collaborating with a diverse team of Ph.D., Graduate, and Undergraduate students to contribute to various aspects of our projects.
+                     I am responsible for the development and modification of PCB plate assemblies, micromachined sensors, and circuitry, alongside engaging in documentation and revision work.
+                      My collaborative efforts extend to the assembly of machinery, resulting in a remarkable 60% improvement in overall device production efficiency, showcasing the impact of my contributions.
+                       In addition to my work on hardware, I demonstrated proficiency in software development by programming a web server for an ESP-32 board using C++, MicroPython, HTML, and JavaScript. 
+                       This application facilitates user input for initial and final voltage parameters with a specified ramp time in a high voltage DC circuit. 
+                       Furthermore, I am actively participating in the prototyping and testing of miniature pumps, evaluating sensor performances, and calculating flow rates and humidity levels for applications in biomedical devices, wearable healthcare devices, and smart medical tools.
+                </p>
+            </div>
+            <div>
+                <h2> Peer-Teaching Assistant <br>(Jan 2024 - Present)</h2>
+                <p>I am currently working as an ENED Peer-Teaching Assistant, where my role encompasses a diverse array of responsibilities aimed at fostering an enriched learning environment.
+                     In my capacity, I actively engage with students during assigned sections, providing assistance as they navigate through in-class activities.
+                      Additionally, I lead Peer Mentoring sessions, facilitating collaborative learning experiences.
+                       To ensure effective support, I diligently participate in weekly training sessions, equipping myself for the challenges and opportunities of the forthcoming week. 
+                       Preparation is key, and I dedicate time to solving in-class activities before each session, ensuring a thorough understanding to aid student comprehension.
+                    Collaboration is at the core of my responsibilities as I collaborate with a team of three Peer-Teaching Assistants to meticulously grade all assignments within the assigned class. Furthermore, my involvement extends to participating in exam grading sessions and project demonstrations, contributing to the overall assessment process. Beyond the classroom, I extend my assistance to students through organized tutoring sessions, ensuring their holistic academic growth. Through this multifaceted role, I am committed to enhancing the educational experience for both myself and the students I support.</p>
+            </div>
+            <div>
+                <h2>Research Volunteer <br> (April - June 2023)</h2>
+                <p>In my role as a Research Volunteer, I had the privilege of contributing to two research laboratories, each pushing the boundaries of technology and human-machine interaction. 
+                    The first, the "Machine Errors in Affect-Aware Cyber-Human Systems Laboratory," immersed me in the evaluation of computer algorithms adept at dynamically adjusting task difficulty based on physiological indicators.
+                     From monitoring respiration, heart rate, sweat, to eye movements, we explored the intricate interplay between human affect and algorithmic responsiveness, enhancing adaptability within cyber-human systems.
+                      Transitioning to the "Motor Learning for Robot-Aided Arm Rehabilitation Laboratory," my focus shifted to unraveling the complexities of human motor learning in varied robot-aided scenarios.
+                       Utilizing collaborative learning, we employed a 2D labyrinth game and target tracking to gauge the efficacy of rehabilitation approaches, contributing valuable insights to optimize robot-aided motor learning and advance strategies for improved rehabilitation outcomes. 
+                       These experiences not only broadened my interdisciplinary research prowess but also underscored the pivotal role of technology in shaping the future of human-machine symbiosis.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------projects-------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="work">
+                <img src="images/FF.png">
+                <div class="layer">
+                    <h3>FaunaFinder: AI-Powered Animal Breed Recognition</h3>
+                    <p>
+                        Designed and created "FaunaFinder," an innovative web application that offers instant animal recognition and in-depth information about any animal including its characteristics, classifications, similar species, and its habitat locations.
+	                    Utilized HTML, CSS, and JavaScript for the front end, and used Python and Flask framework to build the back end, and integrated various APIs such as Google Cloud Vision API, Wikipedia API, GBIF Species API, and API-Ninjas Animals API.
+	                    Secured the “Best Use of AI in Education” Category Award, highlighting proficiency in image recognition and analysis.
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/BMS.png">
+                <div class="layer">
+                    <h3>Bank Management System</h3>
+                    <p>Designed a C++ program for admin and customer interactions, including operations such as deposits, withdrawals, transfers, and balance checks, with admin-specific operations such as interest calculation and account freezing.
+                    Utilized object-oriented principles to develop advanced functionalities for precise date calculations, seamless customer management, and improving system security using an encryption system, enhancing overall system performance by 25%.
+                        </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/FCC.png">
+                <div class="layer">
+                    <h3>Food Calorie Counter</h3>
+                    <p>Developed a web application using HTML and Bootstrap for styling, dynamic content rendering via Django template tags, and data visualization with Chart.js for displaying nutritional data and conditional alerts for nutritional values.
+                        Established the back end using Python with Django, which handles user queries, making API requests for nutritional data parsing responses, and rendering dynamic templates with efficient data processing using the API-Ninjas Nutrition API.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane" aria-hidden="true"></i>sinayksp@mail.uc.edu</p>
+                <p><i class="fa-solid fa-square-phone" aria-hidden="true"></i> +1 (513)-908-8618</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shivamkharangate"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/ShivamKGate"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                </div>
+                <a href="images/Sinay_Shivam_Resume2024.pdf" download="" class="btn">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required="">
+                    <input type="email" name="Email" placeholder="Your Email" required="">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        <p>Created by Shivam Kharangate using HTML, CSS, and JavaScript.</p>
+    </div>
+</div>
+</body></html>
